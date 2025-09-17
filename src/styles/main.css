@@ -1,0 +1,49 @@
+/* src/styles/main.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('./variables.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-pin {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+body {
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(180deg, var(--saffron) 0%, var(--warm-white) 30%, var(--green) 100%);
+  background-attachment: fixed;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.map-container {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.translucent-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.animate-spin-slow {
+  animation: spin-slow 60s linear infinite;
+}
+
+.pulse-pin {
+  animation: pulse-pin 2s infinite;
+}

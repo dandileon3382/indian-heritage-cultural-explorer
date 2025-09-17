@@ -1,0 +1,9 @@
+/* src/styles/variables.css */
+
+:root {
+  --saffron: #FF9933;
+  --white: #FFFFFF;
+  --green: #138808;
+  --navy-blue: #000080;
+  --warm-white: #F5F5DC; /* New color for a warmer vibe */
+}
